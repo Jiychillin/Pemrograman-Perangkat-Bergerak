@@ -9,29 +9,28 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
+        appBar: AppBar(
+          title: Text('Vertical Container with Gap'),
+        ),
+        body: Container(
+          margin: EdgeInsets.all(10.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                width: 100,
                 height: 100,
-                color: Color.fromARGB(255, 130, 243, 148),
+                color: Color.fromARGB(255, 81, 135, 235),
+                margin: EdgeInsets.only(bottom: 100.0),
               ),
               Container(
-                width: 100,
                 height: 100,
-                color: Color.fromARGB(255, 156, 224, 255),
+                color: Color.fromARGB(255, 240, 98, 181),
+                margin: EdgeInsets.only(bottom: 100.0),
               ),
               Container(
-                width: 100,
                 height: 100,
-                color: Color.fromARGB(255, 253, 240, 122),
-              ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Color.fromARGB(255, 243, 130, 130),
+                color: Color.fromARGB(255, 238, 213, 69),
+                margin: EdgeInsets.only(bottom: 100.0),
               ),
             ],
           ),
