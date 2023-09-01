@@ -10,45 +10,28 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: SingleChildScrollView(
-          child: Column(
+          scrollDirection: Axis.horizontal,
+          child: Row(
             children: [
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 50),
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: Container(
-                        height: 100,
-                        color: Color.fromARGB(255, 94, 247, 171),
-                      ),
-                    ),
-                    Expanded(
-                      child: Container(
-                        height: 100,
-                        color: Color.fromARGB(255, 18, 143, 95),
-                      ),
-                    ),
-                  ],
-                ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Color.fromARGB(255, 130, 243, 148),
               ),
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 10),
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: Container(
-                        height: 100,
-                        color: Color.fromARGB(255, 255, 185, 217),
-                      ),
-                    ),
-                    Expanded(
-                      child: Container(
-                        height: 100,
-                        color: Color.fromARGB(255, 226, 62, 90),
-                      ),
-                    ),
-                  ],
-                ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Color.fromARGB(255, 156, 224, 255),
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Color.fromARGB(255, 253, 240, 122),
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Color.fromARGB(255, 243, 130, 130),
               ),
             ],
           ),
